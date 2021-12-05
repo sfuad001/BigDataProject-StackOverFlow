@@ -1,25 +1,29 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { PieChart } from './PieChart';
+import { BarChart } from './BarChart';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <Container className="p-3">
+        <Row className="py-3">
+          <Col className="my-3 mx-auto">
+            <BarChart />
+          </Col>
+        </Row>
+        <Row className="py-3">
+          <Col className="my-3 mx-auto">
+            <PieChart />
+          </Col>
+        </Row>
+      </Container>
+    );
+  }
 }
 
 export default App;
