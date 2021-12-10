@@ -78,7 +78,7 @@ export class BarChart extends React.Component {
 						{ label: "2018", y: 14.5843 },
 						{ label: "2019", y: 12.6700 },
 						{ label: "2020", y: 12.7634 },
-						{ label: "2021", y: 7.6436}
+						{ label: "2021", y: 7.6436 }
 					]
 				}
 			]
