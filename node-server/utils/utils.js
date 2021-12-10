@@ -9,7 +9,8 @@ function readCSV (filepath) {
 }
 
 function convertCSVtoJson (csvData) {
-    const lines = csvData.toString().split('\r\n');
+    csvData = csvData.replace(/\r\n/g, '\n');
+    const lines = csvData.toString().split('\n');
     let columnNames;
     const jsonList = [];
     if (lines.length > 0) {

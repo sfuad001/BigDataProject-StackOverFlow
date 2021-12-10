@@ -11,6 +11,7 @@ var usersRouter = require('./routes/users');
 // custom routers
 // routers location
 const postCountVsLocationRouter = require('./routes/location-routes/postCountVsLocationSorted');
+const trendsRouter = require('./routes/trend-routes/trends');
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use('/users', usersRouter);
 
 // location routers
 app.use('/', postCountVsLocationRouter);
+app.use('/', trendsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
