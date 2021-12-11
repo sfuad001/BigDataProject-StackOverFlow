@@ -38,3 +38,10 @@
 
 #scatterplot.py
 - generates the scatter plots for 5 different features used in predicting response time vs the response time
+
+************ Geographical distribution of Posts **************
+This folder contains the scala file for counting number of posts for differnt geographical locations from Users.xml and Post.xml and python code for creating choropleth map of post distribution across 50 states of the USA.
+#App.scala
+   Input: Users.xml, Posts.xml
+   Output: Location and Post count for each location 
+           
