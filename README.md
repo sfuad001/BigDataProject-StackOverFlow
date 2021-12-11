@@ -55,4 +55,6 @@ https://reactjs.org/docs/create-a-new-react-app.html
     Use this command after commands from point 1(if commands from point 1 needed).
 3.  Open your browser and go to https://localhost:3000
 
-    
+
+## Important
+Please start the node-server before staring the react-app
